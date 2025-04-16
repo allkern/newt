@@ -7,6 +7,7 @@ OUTPUT_DIR := bin
 
 CXX := g++
 CXXFLAGS := $(addprefix -I, $(INCLUDE_DIRS))
+CXXFLAGS += -O3 -march=native -mtune=native -Wall -pedantic
 CXXSRC := $(wildcard src/*.cpp)
 CXXOBJ := $(CXXSRC:.cpp=.o)
 

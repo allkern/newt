@@ -59,7 +59,7 @@ void http_recv(Connection* conn, void* udata) {
             "HTTP/1.1 404 Not found\r\n"
             "Content-Type: text/html\r\n"
             "Content-Length: 90\r\n"
-            "Server: Newt 0.1 (Linux)\r\n";
+            "Server: Newt 0.1 (Linux)\r\n"
             "\r\n"
             "<html>\n"
             "  <title>404 Not found</title>\n"
@@ -72,7 +72,6 @@ void http_recv(Connection* conn, void* udata) {
     printf("response=%s\n", response.c_str());
 
     conn->send((void*)response.c_str(), response.size());
-    // conn->end();
 }
 
 int HttpServer::open(std::string host) {
