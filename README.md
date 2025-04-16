@@ -1,5 +1,5 @@
 # 😸 Newt
-A *very* simple webserver built from scratch with Linux sockets and C++
+A *very* simple webserver built from scratch using Linux sockets and C++
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/a0acb085-502f-4168-b262-9720b2024102" width=75%>
@@ -22,3 +22,5 @@ make -j8
 
 # Usage
 Newt will use the `content` folder as the root of your webpage, change the files inside to your liking!
+
+Webpage will be served at `localhost:1234`
